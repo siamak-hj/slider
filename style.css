@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 1s;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #080833;
+}
+.container{
+	width: 992px;
+	margin: 80px auto 0;
+	position: relative;
+	overflow: hidden;
+}
+.container .prev i, .container .next i{
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+}
+.container .prev{
+	position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+.container .slides{
+	width: 950px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 542px;
+}
+
+.container .slides .slide{
+	position: absolute;
+	width: 531px;
+	height: 542px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	background: url(images/hex.svg) no-repeat ;
+	background-size: 100%;
+	background-position: center center;
+}
+.center-slide{
+	z-index: 100;
+}
+.container .slides .slide a{
+	display: block;
+    text-align: center;
+    margin: 50px auto 10px;
+    text-decoration: none;
+    color: #78028c;
+    font-size: 18px;
+}
+.container .slides .slide .rating {
+	margin: 10px auto 40px;
+	text-align: center;
+	color: gold;
+}
+.container .slides .slide p{
+	width: 70%;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto 20px;
+	color: #444;
+	font-size: 16px;
+	line-height: 30px;
+}
+.container .slides .slide span{
+	display: block;
+    text-align: center;
+    padding: 20px;
+    color: #773990;
+}
+.container .slides .slide .button{
+	margin: 10px auto;
+    text-align: center;
+    border: 2px solid #464646;
+    border-radius: 20px;
+    padding: 5px;
+    width: 140px;
+    color: #444;
+    font-size: 14px;
+    cursor: pointer;
+}
+.container .slides .slide .page{
+	text-align: center;
+	padding-top: 10px;
+}
+.container .slides .slide .button:hover{
+	color: #fff;
+    border: 2px solid #773990;
+	background: #773990;
+}
+
+.container .slides .slide .panta{
+	width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.container .next{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+
